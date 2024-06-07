@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforming and Transitioning Elements</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.letter-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    background-color: #db6e34;
+    color: white;
+    font-size: 2em;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.letter-box:hover {
+    transform: scale(1.2) rotate(50deg);
+    background-color: #2ecc71;
+}
+
+    </style>
+</head>
+<body>
+    <div class="letter-box">A</div>
+    <div class="letter-box">B</div>
+    <div class="letter-box">C</div>
+</body>
+</html>
